@@ -1,105 +1,248 @@
-html{scroll-behavior:smooth}body{margin:0}.react-skip{position:fixed;left:1rem;top:-100px;z-index:9999;padding:12px;background:white;color:black}.react-skip:focus{top:1rem}.elementor-invisible{visibility:visible!important}.e-con.e-parent{opacity:1}.elementor-nav-menu--main .sub-menu{display:none;position:absolute;z-index:50;min-width:200px;background:white;box-shadow:0 8px 20px #0002}.elementor-nav-menu--main li:hover>.sub-menu,.elementor-nav-menu--main li:focus-within>.sub-menu{display:block}.elementor-nav-menu li{position:relative}.elementor-nav-menu--main .sub-menu a{padding:12px 20px;display:block}.elementor-nav-menu--dropdown[aria-hidden=true]{display:none}.elementor-menu-toggle{cursor:pointer}.elementor-menu-toggle.elementor-active .elementor-menu-toggle__icon--open{display:none}.elementor-menu-toggle:not(.elementor-active) .elementor-menu-toggle__icon--close{display:none}[data-react-slides]{transition:background-image .7s ease}.elementskit-single-image-accordion{min-height:300px;background-size:cover;background-position:center}.elementskit-single-image-accordion:hover .elementskit-image-accordion-content{opacity:1;visibility:visible}.not-found{padding:100px 8%}.form-notice{width:100%;padding:16px;background:#fff3d9;color:#35250d}.elementor-form input,.elementor-form textarea{max-width:100%}img{max-width:100%}:focus-visible{outline:3px solid #ed9d28;outline-offset:3px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}@media(max-width:767px){.elementor-nav-menu--dropdown{width:100%;position:relative}.elementor-nav-menu--dropdown ul{list-style:none;padding:0}.elementor-nav-menu--dropdown a{display:block;padding:12px 16px}.elementor-nav-menu--dropdown .sub-menu{padding-left:20px}.elementskit-image-accordion-wraper{flex-direction:column!important}.elementskit-single-image-accordion{width:100%!important}body{overflow-x:hidden}}
+/* =========================================
+   BASE AND ACCESSIBILITY
+   ========================================= */
 
-/* Restore the dark footer background */
-.elementor-182 .elementor-element-24fed091,
-.elementor-182 .elementor-element-35198ca5 {
-  background-color: #171717 !important;
-  color: #ffffff !important;
+html {
+  scroll-behavior: smooth;
 }
 
-.elementor-182 .elementor-element-24fed091 a,
-.elementor-182 .elementor-element-24fed091 h2,
-.elementor-182 .elementor-element-24fed091 .elementor-icon-list-text,
-.elementor-182 .elementor-element-35198ca5 a {
-  color: #ffffff !important;
+body {
+  margin: 0;
 }
 
-/* Yellow contact section with navy blue text */
-.elementor-182 .elementor-element-57dc12bc,
-.elementor-182 .elementor-element-7baa92a {
-  background-color: #ffd43b !important;
+img {
+  max-width: 100%;
 }
 
-.elementor-182 .elementor-element-57dc12bc .elementor-heading-title,
-.elementor-182 .elementor-element-57dc12bc a,
-.elementor-182 .elementor-element-7baa92a .elementor-heading-title,
-.elementor-182 .elementor-element-7baa92a a {
-  color: #102a43 !important;
+.react-skip {
+  position: fixed;
+  left: 1rem;
+  top: -100px;
+  z-index: 9999;
+  padding: 12px;
+  background: white;
+  color: black;
 }
 
-/* Core Team and Finance & HR banners */
+.react-skip:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 3px solid #ed9d28;
+  outline-offset: 3px;
+}
+
+.elementor-invisible {
+  visibility: visible !important;
+}
+
+.e-con.e-parent {
+  opacity: 1;
+}
+
+.not-found {
+  padding: 100px 8%;
+}
+
+.form-notice {
+  width: 100%;
+  padding: 16px;
+  background: #fff3d9;
+  color: #35250d;
+}
+
+.elementor-form input,
+.elementor-form textarea {
+  max-width: 100%;
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.elementor-nav-menu li {
+  position: relative;
+}
+
+.elementor-nav-menu--main .sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 50;
+  min-width: 200px;
+  background: white;
+  box-shadow: 0 8px 20px #0002;
+}
+
+.elementor-nav-menu--main li:hover > .sub-menu,
+.elementor-nav-menu--main li:focus-within > .sub-menu {
+  display: block;
+}
+
+.elementor-nav-menu--main .sub-menu a {
+  display: block;
+  padding: 12px 20px;
+}
+
+.elementor-nav-menu--dropdown[aria-hidden="true"] {
+  display: none;
+}
+
+.elementor-menu-toggle {
+  cursor: pointer;
+}
+
+.elementor-menu-toggle.elementor-active
+.elementor-menu-toggle__icon--open,
+.elementor-menu-toggle:not(.elementor-active)
+.elementor-menu-toggle__icon--close {
+  display: none;
+}
+
+/* =========================================
+   SLIDES AND PROJECT IMAGES
+   ========================================= */
+
+[data-react-slides] {
+  transition: background-image 0.7s ease;
+}
+
+.elementskit-single-image-accordion {
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.elementskit-single-image-accordion:hover
+.elementskit-image-accordion-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+#content [style*="a5583348004d.jpg"] {
+  background-image: url("/assets/6b2d961d8b55.jpg") !important;
+}
+
+#content [style*="a44a7d296c6b.jpg"] {
+  background-image: url("/assets/725d21567326.jpg") !important;
+}
+
+#content [style*="6b89493dc344.jpg"] {
+  background-image: url("/assets/0e9b8fb9f518.jpg") !important;
+}
+
+#content [style*="c2d60ecbc1e3.png"] {
+  background-image: url("/assets/25576c32b3d0.png") !important;
+}
+
+/* =========================================
+   HOMEPAGE INTRODUCTION
+   ========================================= */
+
 #content :is(
-  .elementor-element-4fb15c27,
-  .elementor-element-8eaec8b,
-  .elementor-element-e89d222
-) {
-  background: #102a43 !important;
+  .elementor-element-70baed61,
+  .elementor-element-23e765b
+),
+#content :is(
+  .elementor-element-70baed61,
+  .elementor-element-23e765b
+) .elementor-widget-wrap {
+  background-color: #102a43 !important;
 }
 
 #content :is(
-  .elementor-element-4fb15c27,
-  .elementor-element-8eaec8b,
-  .elementor-element-e89d222
+  .elementor-element-5675c069,
+  .elementor-element-fb6d459
+) > .elementor-widget-wrap {
+  padding: 16px !important;
+}
+
+#content :is(
+  .elementor-element-70baed61,
+  .elementor-element-23e765b
 ) * {
   color: #ffffff !important;
   -webkit-text-stroke: 0 !important;
 }
 
-#content :is(
-  .elementor-element-4fb15c27,
-  .elementor-element-8eaec8b,
-  .elementor-element-e89d222
-) > .elementor-background-overlay {
-  background: transparent !important;
-}
+/* SRC LAND BUILDING */
 
-/* Larger banner text */
 #content :is(
-  .elementor-element-4fb15c27,
-  .elementor-element-8eaec8b,
-  .elementor-element-e89d222
-) :is(h1, h2, h3, h4, h5, h6) {
-  font-size: clamp(32px, 4vw, 56px) !important;
+  .elementor-element-43da3f7e,
+  .elementor-element-a7ce38e,
+  .elementor-element-e8b19ad,
+  .elementor-element-90ec253
+) .ekit-heading--title {
+  color: #ffffff !important;
+  font-size: clamp(30px, 3.5vw, 56px) !important;
   font-weight: 700 !important;
-  line-height: 1.2 !important;
+  line-height: 1.15 !important;
 }
 
-/* Smaller label above the main title */
+/* REAL ESTATE */
+
 #content :is(
-  .elementor-element-4fb15c27,
-  .elementor-element-8eaec8b,
-  .elementor-element-e89d222
-) .elementor-heading-title {
-  font-size: clamp(20px, 2.5vw, 30px) !important;
+  .elementor-element-9d60f99,
+  .elementor-element-d3eb9d0,
+  .elementor-element-e7742de,
+  .elementor-element-0ae616f
+) .ekit-heading--title {
+  color: #ffd43b !important;
+  font-size: clamp(30px, 3.5vw, 56px) !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
 }
 
-/* Main banner title */
-#content :is(
-  .elementor-element-4fb15c27,
-  .elementor-element-8eaec8b,
-  .elementor-element-e89d222
-) :is(h1, h2) {
-  font-size: clamp(26px, 3vw, 46px) !important;
+/* =========================================
+   HOMEPAGE SERVICE HEADING BARS
+   ========================================= */
+
+#content .elementor-12
+.elementor-widget-elementskit-faq
+.elementskit-faq-header {
+  background: #ffa500 !important;
+  padding: 20px 24px !important;
+  margin: 0 0 24px !important;
+  border: none !important;
+  min-height: 0 !important;
 }
 
-/* About Us: navy blue text panel */
+#content .elementor-12
+.elementor-widget-elementskit-faq
+.elementskit-faq-title {
+  background: transparent !important;
+  color: #102a43 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 24px !important;
+  line-height: 1.4 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* =========================================
+   ABOUT US
+   ========================================= */
+
 #content :is(
   .elementor-element-5d1eb820,
   .elementor-element-4f7f139
 ) > .elementor-widget-wrap {
   background: #020729 !important;
-  padding: 60px 30px !important;
+  padding: 16px 30px 60px !important;
 }
 
-/* About Us label, subtitle and paragraph */
 #content :is(
   .elementor-element-5d1eb820,
   .elementor-element-4f7f139
-) :is(.elementor-divider__text, .ekit-heading--subtitle, p) {
+) :is(
+  .elementor-divider__text,
+  .ekit-heading--subtitle,
+  p
+) {
   color: #ffffff !important;
 }
 
-/* Who We Are */
 #content :is(
   .elementor-element-5d1eb820,
   .elementor-element-4f7f139
@@ -110,7 +253,6 @@ html{scroll-behavior:smooth}body{margin:0}.react-skip{position:fixed;left:1rem;t
   line-height: 1.15 !important;
 }
 
-/* SPECIALISTS / CAPABILITIES */
 #content :is(
   .elementor-element-5d1eb820,
   .elementor-element-4f7f139
@@ -119,7 +261,8 @@ html{scroll-behavior:smooth}body{margin:0}.react-skip{position:fixed;left:1rem;t
   font-weight: 700 !important;
 }
 
-/* Remove the separate paragraph box */
+/* Paragraph styling and removal of the green line */
+
 #content :is(
   .elementor-element-1917ebf9,
   .elementor-element-dfdd6ac
@@ -127,37 +270,7 @@ html{scroll-behavior:smooth}body{margin:0}.react-skip{position:fixed;left:1rem;t
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  padding: 20px 0 0 !important;
-}
-
-#content :is(
-  .elementor-element-1917ebf9,
-  .elementor-element-dfdd6ac
-) p {
-  font-size: clamp(16px, 1.2vw, 20px) !important;
-  line-height: 1.5 !important;
-}
-
-/* Hide the broken image layered over the existing photo */
-#content .elementor-element-d5e4de9 {
-  display: none !important;
-}
-
-/* Reduce space above the About Us text */
-#content :is(
-  .elementor-element-5d1eb820,
-  .elementor-element-4f7f139
-) > .elementor-widget-wrap {
-  padding-top: 16px !important;
-}
-
-/* Remove the line and extra space around the paragraph */
-#content :is(
-  .elementor-element-1917ebf9,
-  .elementor-element-dfdd6ac
-) .elementskit-infobox {
-  border: none !important;
-  padding-top: 0 !important;
+  padding: 0 !important;
 }
 
 #content :is(
@@ -179,82 +292,163 @@ html{scroll-behavior:smooth}body{margin:0}.react-skip{position:fixed;left:1rem;t
   padding-top: 0 !important;
 }
 
-/* Fix the four featured project images */
-#content [style*="a5583348004d.jpg"] {
-  background-image: url("/assets/6b2d961d8b55.jpg") !important;
-}
-
-#content [style*="a44a7d296c6b.jpg"] {
-  background-image: url("/assets/725d21567326.jpg") !important;
-}
-
-#content [style*="6b89493dc344.jpg"] {
-  background-image: url("/assets/0e9b8fb9f518.jpg") !important;
-}
-
-#content [style*="c2d60ecbc1e3.png"] {
-  background-image: url("/assets/25576c32b3d0.png") !important;
-}
-
-/* Homepage image-and-text section: navy background, white text */
 #content :is(
-  .elementor-element-70baed61,
-  .elementor-element-23e765b
-),
-#content :is(
-  .elementor-element-70baed61,
-  .elementor-element-23e765b
-) .elementor-widget-wrap {
-  background-color: #102a43 !important;
+  .elementor-element-1917ebf9,
+  .elementor-element-dfdd6ac
+) p {
+  color: #ffffff !important;
+  font-size: clamp(16px, 1.2vw, 20px) !important;
+  line-height: 1.5 !important;
 }
 
-/* Text panel spacing */
-#content :is(
-  .elementor-element-5675c069,
-  .elementor-element-fb6d459
-) > .elementor-widget-wrap {
-  padding: 16px !important;
+/* Hide the broken image over the existing background photo */
+
+#content .elementor-element-d5e4de9 {
+  display: none !important;
 }
 
-/* White text */
+/* =========================================
+   TEAM PAGE WIDTH AND SPACING
+   ========================================= */
+
+main#content {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#content > .elementor-1268 {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Center the content with equal side spacing */
+
+#content .elementor-1268 > .e-parent {
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  --margin-left: 0px;
+  --margin-right: 0px;
+  padding-left: clamp(16px, 3vw, 40px) !important;
+  padding-right: clamp(16px, 3vw, 40px) !important;
+  box-sizing: border-box !important;
+}
+
+#content .elementor-1268
+.elementor-element-9d3fec7 > .elementor-widget-container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* =========================================
+   CORE TEAM AND FINANCE & HR BANNERS
+   ========================================= */
+
 #content :is(
-  .elementor-element-70baed61,
-  .elementor-element-23e765b
+  .elementor-element-4fb15c27,
+  .elementor-element-8eaec8b,
+  .elementor-element-e89d222
+) {
+  background: #102a43 !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-inline: 20px !important;
+  box-sizing: border-box !important;
+}
+
+#content :is(
+  .elementor-element-4fb15c27,
+  .elementor-element-8eaec8b,
+  .elementor-element-e89d222
 ) * {
   color: #ffffff !important;
   -webkit-text-stroke: 0 !important;
 }
 
-/* SRC LAND BUILDING: larger and white */
 #content :is(
-  .elementor-element-43da3f7e,
-  .elementor-element-a7ce38e,
-  .elementor-element-e8b19ad,
-  .elementor-element-90ec253
-) .ekit-heading--title {
+  .elementor-element-4fb15c27,
+  .elementor-element-8eaec8b,
+  .elementor-element-e89d222
+) > .elementor-background-overlay {
+  background: transparent !important;
+}
+
+#content :is(
+  .elementor-element-4fb15c27,
+  .elementor-element-8eaec8b,
+  .elementor-element-e89d222
+) :is(h1, h2, h3, h4, h5, h6) {
+  font-size: clamp(32px, 4vw, 56px) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+
+#content :is(
+  .elementor-element-4fb15c27,
+  .elementor-element-8eaec8b,
+  .elementor-element-e89d222
+) .elementor-heading-title {
+  font-size: clamp(20px, 2.5vw, 30px) !important;
+}
+
+#content :is(
+  .elementor-element-4fb15c27,
+  .elementor-element-8eaec8b,
+  .elementor-element-e89d222
+) :is(h1, h2) {
+  font-size: clamp(26px, 3vw, 46px) !important;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+/* Main footer */
+
+.elementor-182 .elementor-element-24fed091 {
+  background-color: #171717 !important;
   color: #ffffff !important;
-  font-size: clamp(30px, 3.5vw, 56px) !important;
-  font-weight: 700 !important;
-  line-height: 1.15 !important;
 }
 
-/* REAL ESTATE: larger and yellow */
-#content :is(
-  .elementor-element-9d60f99,
-  .elementor-element-d3eb9d0,
-  .elementor-element-e7742de,
-  .elementor-element-0ae616f
-) .ekit-heading--title {
-  color: #ffd43b !important;
-  font-size: clamp(30px, 3.5vw, 56px) !important;
-  font-weight: 700 !important;
-  line-height: 1.15 !important;
+.elementor-182 .elementor-element-24fed091 a,
+.elementor-182 .elementor-element-24fed091 h2,
+.elementor-182 .elementor-element-24fed091
+.elementor-icon-list-text {
+  color: #ffffff !important;
 }
 
-/* Maintenance credit: white background, navy text */
+/* Yellow contact strip */
+
+.elementor-182 :is(
+  .elementor-element-57dc12bc,
+  .elementor-element-7baa92a
+) {
+  background-color: #ffd43b !important;
+}
+
+.elementor-182 :is(
+  .elementor-element-57dc12bc,
+  .elementor-element-7baa92a
+) :is(.elementor-heading-title, a) {
+  color: #102a43 !important;
+}
+
+/* White maintenance credit strip */
+
 footer.elementor-182 .elementor-element-35198ca5,
-footer.elementor-182 .elementor-element-35198ca5 .elementor-widget-wrap,
-footer.elementor-182 .elementor-element-35198ca5 .elementor-widget-container {
+footer.elementor-182 .elementor-element-35198ca5
+.elementor-widget-wrap,
+footer.elementor-182 .elementor-element-35198ca5
+.elementor-widget-container {
   background: #ffffff !important;
 }
 
@@ -262,6 +456,181 @@ footer.elementor-182 .elementor-element-35198ca5 * {
   color: #102a43 !important;
 }
 
-footer.elementor-182 .elementor-element-35198ca5 > .elementor-background-overlay {
+footer.elementor-182 .elementor-element-35198ca5
+> .elementor-background-overlay {
   background: transparent !important;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 767px) {
+  .elementor-nav-menu--dropdown {
+    width: 100%;
+    position: relative;
+  }
+
+  .elementor-nav-menu--dropdown ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .elementor-nav-menu--dropdown a {
+    display: block;
+    padding: 12px 16px;
+  }
+
+  .elementor-nav-menu--dropdown .sub-menu {
+    padding-left: 20px;
+  }
+
+  .elementskit-image-accordion-wraper {
+    flex-direction: column !important;
+  }
+
+  .elementskit-single-image-accordion {
+    width: 100% !important;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+/* Services: visible, larger images */
+#content .elementor-214 .elementor-widget-image img {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Projects category cards: text only */
+#content .elementor-element-1789b539
+.elementskit-box-header {
+  display: none !important;
+}
+
+#content .elementor-element-1789b539
+.elementskit-info-image-box {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px !important;
+  height: auto !important;
+  padding: 24px !important;
+  box-sizing: border-box;
+}
+
+/* Center the category labels */
+#content .elementor-element-1789b539
+.elementskit-box-body {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#content .elementor-element-1789b539
+.elementskit-info-box-title {
+  margin: 0 !important;
+  text-align: center;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #999999 !important;
+}
+
+/* Keep the entire card clickable */
+#content .elementor-element-1789b539
+.elementskit-info-image-box > a {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Smaller Projects page slideshow */
+#content .elementor-347 .elementor-element-76c13a09 {
+  --min-height: 0px;
+  min-height: 0 !important;
+  height: 660px !important;
+  padding: 0 !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Remove the spacer causing extra height */
+#content .elementor-347 .elementor-element-d97f7ea {
+  display: none !important;
+}
+
+/* Properties page: show the two top photos */
+#content .elementor-272 .elementor-element-289e2b4c {
+  min-height: 400px !important;
+  gap: 0 !important;
+}
+
+#content .elementor-272 :is(
+  .elementor-element-2bb2ebe1,
+  .elementor-element-5f19717d
+) {
+  min-height: 526px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+#content .elementor-272 .elementor-element-2bb2ebe1 {
+  background-image: url("/assets/565e988cd919.jpg") !important;
+}
+
+#content .elementor-272 .elementor-element-5f19717d {
+  background-image: url("/assets/769dee591c06.png") !important;
+}
+/* Give dropdown menus enough room */
+.elementor-nav-menu--main .sub-menu {
+  width: max-content !important;
+  min-width: 280px !important;
+  max-width: calc(100vw - 32px) !important;
+  padding: 8px 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Consistent dropdown text and spacing */
+.elementor-nav-menu--main .sub-menu a {
+  padding: 12px 20px !important;
+  font-size: 18px !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.5px !important;
+  white-space: normal !important;
+  text-align: left !important;
+  box-sizing: border-box !important;
+}
+/* Keep the full photo inside the left column */
+#content .elementor-1652 .elementor-element-8b368cb {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #00062b !important;
+  overflow: hidden;
+}
+
+/* Remove the broken image layered over the slideshow */
+#content .elementor-1652 .elementor-element-37ff417 {
+  display: none !important;
 }

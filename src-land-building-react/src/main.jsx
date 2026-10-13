@@ -22,7 +22,54 @@ function App(){
   const title=e.target.closest('.elementor-tab-title,.elementskit-faq-title');
   if(title){const panel=title.nextElementSibling;if(panel){const open=title.getAttribute('aria-expanded')!=='true';title.setAttribute('aria-expanded',String(open));title.classList.toggle('elementor-active',open);panel.style.display=open?'block':'none'}return}
   const a=e.target.closest('a[href]');if(!a||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;
-  const url=new URL(a.href,location.href);if(url.origin===location.origin&&site.pages[url.pathname.replace(/\/?$/,'/')]){e.preventDefault();history.pushState({},'',url.pathname+url.hash);setPath(url.pathname.replace(/\/?$/,'/'));window.scrollTo({top:0});}
+  const url = new URL(a.href, location.href);
+
+const destinationPath = url.pathname.replace(/\/?$/, "/");
+const currentPath = location.pathname.replace(/\/?$/, "/");
+
+/* Jump to a section on the current page */
+if (
+  url.origin === location.origin &&
+  destinationPath === currentPath &&
+  url.hash
+) {
+  let sectionId = decodeURIComponent(url.hash.slice(1));
+
+  // Correct the Finance button's destination
+  if (sectionId === "Finance") {
+    sectionId = "Financial";
+  }
+
+  const section = document.getElementById(sectionId);
+
+  if (section) {
+    e.preventDefault();
+
+    history.pushState(
+      {},
+      "",
+      url.pathname + "#" + encodeURIComponent(sectionId)
+    );
+
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  return;
+}
+
+/* Navigate to another page */
+if (
+  url.origin === location.origin &&
+  site.pages[destinationPath]
+) {
+  e.preventDefault();
+  history.pushState({}, "", url.pathname + url.hash);
+  setPath(destinationPath);
+  window.scrollTo({ top: 0 });
+}
  };
  const key=e=>{if(['Enter',' '].includes(e.key)&&e.target.matches('.elementor-menu-toggle,.elementor-tab-title,.elementskit-faq-title')){e.preventDefault();e.target.click()}};
  const submit=e=>{if(e.target.matches('[data-react-form]')){e.preventDefault();if(!e.target.reportValidity())return;let notice=e.target.querySelector('.form-notice');if(!notice){notice=document.createElement('p');notice.className='form-notice';notice.setAttribute('role','status');e.target.appendChild(notice)}notice.textContent='Online submission is not connected in this copy. Please call SRC at (469) 501-9361 to send your inquiry or application.'}};
